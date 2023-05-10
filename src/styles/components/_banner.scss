@@ -1,0 +1,49 @@
+.banner {
+    &__list {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        &__item {
+            margin: 0 10px;
+            width: 640px;
+
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .banner__control {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+            color: #F8C052;
+
+            .control__prev {
+                position: absolute;
+                left: 4%;
+            }
+
+            .control__next {
+                position: absolute;
+                right: 4%;
+            }
+
+            .control__prev:hover,
+            .control__next:hover {
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .banner__control {
+            display: none;
+        }
+
+        .banner__list__item {}
+    }
+}

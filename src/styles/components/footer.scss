@@ -1,0 +1,202 @@
+.footer {
+    width: 100%;
+    height: auto;
+    color: #666;
+    background-color: #fff;
+    margin-top: 50px;
+
+    &__top {
+        padding: 28px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        background-color: #f2f2f2;
+
+        .mod-content {
+            width: 205px;
+            padding: 10px 0;
+
+            font-size: 16px;
+            font-weight: normal;
+            text-align: right;
+
+            color: #222;
+        }
+
+        .input-mail {
+            display: flex;
+
+            input {
+                padding: 0 20px;
+                width: 412px;
+                height: 40px;
+                font-size: 14px;
+                flex-shrink: 1;
+
+                border-radius: 20px 0 0 20px;
+                background: #FFF;
+                border: 1px solid #e1e1e1;
+            }
+
+            button {
+                height: 40px;
+                padding: 0 30px;
+
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+                flex-shrink: 0;
+
+                border: none;
+                border-radius: 0 20px 20px 0;
+                background: #f8c052;
+                color: #FFF;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+            gap: 0;
+            padding-bottom: 36px;
+
+            .mod-content {
+                width: auto;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .input-mail {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__center {
+        margin: 30px auto 0;
+
+
+        &--inner {
+            display: flex;
+            margin: auto;
+
+            .flex-box {
+                display: flex;
+
+                &__list {
+                    width: 305px;
+                    padding: 0 15px;
+
+                    &--sp {
+                        width: 203px;
+                    }
+
+                    &--pay {
+                        width: auto;
+
+                        .distance {
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    h4 {
+                        padding: 0 0 15px;
+
+                        font-size: 16px;
+                        color: #444;
+                        font-weight: bold;
+                        line-height: 1.4;
+                        text-align: left;
+                    }
+
+                    ul {
+                        padding: 0;
+
+                        li {
+                            padding: 6px 0 6px 10px;
+                            display: block;
+
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0.5px;
+
+                            color: #444;
+
+                            &:hover {
+                                color: #e10020;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .follow {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            @media screen and (max-width: 1200px) and (min-width: 992px) {
+                .flex-box__list {
+                    width: 243px;
+
+                    &--sp {
+                        width: auto;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                flex-direction: column;
+
+                .flex-box__list {
+                    &--pay {
+                        margin-top: 60px;
+                    }
+
+                    ul {
+                        li {
+                            padding: 6px 0;
+                        }
+                    }
+
+                    .distance:first-child {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .flex-box {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+            }
+        }
+    }
+
+    &__bot {
+        padding: 15px 0;
+
+        text-align: center;
+        font-size: 12px;
+        color: #000;
+    }
+
+    &__messenge {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        right: 20px;
+        bottom: 15px;
+
+        border-radius: 50%;
+        background: #f8c052;
+    }
+}

@@ -1,0 +1,19 @@
+.title-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &::before,
+    &::after {
+        content: "";
+        height: 2px;
+        display: inline-block;
+        background-color: #CCCCCC;
+    }
+
+    .title__content {
+        display: inline-block;
+        font-size: 20px;
+        padding: 6px 20px;
+    }
+}

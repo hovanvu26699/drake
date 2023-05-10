@@ -1,0 +1,70 @@
+@import "../components/product";
+@import "../components/button";
+
+.brand {
+    margin-top: 80px;
+
+    &__img {
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .list__product {
+        margin-top: 50px;
+        display: grid;
+        column-gap: 10px;
+        row-gap: 20px;
+        grid-template-columns: repeat(6, 1fr);
+
+        .product:nth-child(9),
+        .product:nth-child(10),
+        .product:nth-child(11),
+        .product:nth-child(12) {
+            .product__price {
+                .price__drake {
+                    span {
+                        color: red;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .brand__btn {
+        font-weight: 600;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Iphone(480 x 640)*/
+    @media screen and (min-width: 320px) {
+        .list__product {
+            grid-template-columns: repeat(2, 1fr);
+
+            .product {
+                text-align: center;
+
+            }
+        }
+    }
+
+    /*Ipad dọc(768 x 1024)*/
+    @media screen and (min-width: 768px) {
+        .list__product {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /*Ipad ngang(1024 x 768)*/
+    @media screen and (min-width: 1024px) {
+        .list__product {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+
+}

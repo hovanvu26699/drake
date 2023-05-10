@@ -1,0 +1,58 @@
+.arrival {
+    margin: 80px 0;
+    display: grid;
+    // column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    &__slide {
+        position: relative;
+        width: 88%;
+        height: 100%;
+
+        &__product {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+
+        }
+
+        &__control {
+            font-size: 30px;
+            color: #F8C052;
+
+            .control__prev {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                z-index: 2;
+
+            }
+
+            .control__next {
+                position: absolute;
+                top: 50%;
+                z-index: 2;
+
+                right: 0;
+            }
+
+            .control__prev:hover,
+            .control__next:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    /*Iphone(480 x 640)*/
+    @media screen and (min-width: 320px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /*Ipad dọc(768 x 1024)*/
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}

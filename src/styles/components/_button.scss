@@ -1,0 +1,17 @@
+.btn-outline {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 8px 10px;
+    width: 120px;
+    border-radius: 5px;
+    color: #f8c052;
+    border: 1px solid #f8c052;
+    background-color: #fff;
+    transition: all ease 0.5s;
+}
+
+.btn-outline:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #f8c052;
+}

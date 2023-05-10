@@ -1,0 +1,45 @@
+.list__brand {
+    display: flex;
+    width: 50%;
+    margin: 20px auto;
+    justify-content: center;
+
+    &__item {
+        padding: 0 15px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    /*Iphone(480 x 640)*/
+    @media screen and (min-width: 320px) {
+        width: 100%;
+        flex-wrap: wrap;
+        column-gap: 10px;
+
+        &__item {
+            a {
+                display: block;
+                width: 80%;
+            }
+        }
+    }
+
+    /*Tablet nhỏ(480 x 640)*/
+    @media screen and (min-width: 480px) {
+        &__item {
+            a {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    /*Ipad dọc(768 x 1024)*/
+    @media screen and (min-width: 768px) {}
+
+    /*Ipad ngang(1024 x 768)*/
+    @media screen and (min-width: 1024px) {}
+}
